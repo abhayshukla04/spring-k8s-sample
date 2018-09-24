@@ -10,11 +10,11 @@ spec:
   template: # create pods using pod definition in this template
     metadata:
       labels:
-        app: spring-k8s-sample
+        app: spring-k8s-sample-app
     spec:
       containers:
       - name: spring-k8s-sample
-        image: localhost:5000/spring-k8s-sample:0.1.0
+        image: localhost:5000/spring-k8s-sample:1.0-SNAPSHOT
         ports:
         - containerPort: 8080
           name: server

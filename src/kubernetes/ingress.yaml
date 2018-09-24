@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: spring-k8s-sample-ingress
   annotations:
-    kubernetes.io/ingress.allow-http: "false"
+    kubernetes.io/ingress.allow-http: "true"
 spec:
   tls:
   - secretName: your-tls-secret
